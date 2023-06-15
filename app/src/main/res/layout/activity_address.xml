@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bglogin"
+    tools:context=".RekActivity">
+
+    <ImageView
+        android:id="@+id/img_back"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginStart="20dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:src="@drawable/ic_backblack"
+        />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:text="Daftar Alamat"
+        app:layout_constraintTop_toTopOf="@id/img_back"
+        app:layout_constraintBottom_toBottomOf="@id/img_back"
+        app:layout_constraintStart_toEndOf="@id/img_back"
+        android:layout_marginStart="12dp"
+        android:fontFamily="@font/robotobold"
+        android:textColor="#121010"
+        android:textSize="24sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+
+    <TextView
+        android:id="@+id/tv_alamat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Alamat Lahan"
+        android:fontFamily="@font/robotobold"
+        android:textSize="18sp"
+        android:layout_marginTop="12dp"
+        android:textColor="#121010"
+        app:layout_constraintTop_toBottomOf="@id/img_back"
+        app:layout_constraintStart_toStartOf="@id/img_back"
+        />
+
+
+    <TextView
+        android:id="@+id/tv_addlmt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="24dp"
+        android:fontFamily="@font/robotoregular"
+        android:text="Tambah Alamat"
+        android:textColor="#121010"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_title" />
+
+    <View
+        android:id="@+id/img_card"
+        android:layout_width="410dp"
+        android:layout_height="222dp"
+        android:background="@drawable/img_card"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_alamat" />
+
+    <ImageView
+        android:id="@+id/img_statusbg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
+        android:src="@drawable/img_statusrek"
+        app:layout_constraintStart_toStartOf="@id/img_card"
+        app:layout_constraintTop_toTopOf="@id/img_card" />
+
+    <TextView
+        android:id="@+id/tv_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Status"
+        android:textSize="14sp"
+        android:textColor="#FFFFFF"
+        app:layout_constraintTop_toTopOf="@id/img_statusbg"
+        app:layout_constraintStart_toStartOf="@id/img_statusbg"
+        app:layout_constraintEnd_toEndOf="@id/img_statusbg"
+        app:layout_constraintBottom_toBottomOf="@id/img_statusbg"/>
+
+    <TextView
+        android:id="@+id/tv_kebun"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kebun Magelang"
+        android:layout_marginTop="7dp"
+        android:fontFamily="@font/robotobold"
+        android:textSize="16sp"
+        android:textColor="#121010"
+        app:layout_constraintTop_toBottomOf="@id/img_statusbg"
+        app:layout_constraintStart_toStartOf="@id/img_statusbg"
+        />
+
+    <TextView
+        android:id="@+id/tv_nm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="628647398578"
+        android:textColor="#121010"
+        android:fontFamily="@font/robotoregular"
+        android:layout_marginTop="7dp"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@id/tv_kebun"
+        app:layout_constraintStart_toStartOf="@id/tv_kebun"
+        />
+
+    <TextView
+        android:id="@+id/tv_almt"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:text="Jalan Ungaran KM 7.5 No. 65, Ungaran,
+Jawa Tengah"
+        android:textColor="#121010"
+        android:fontFamily="@font/robotoregular"
+        android:layout_marginTop="7dp"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@id/tv_nm"
+        app:layout_constraintStart_toStartOf="@id/tv_nm"
+        />
+
+    <View
+        android:id="@+id/v_bg_trans"
+        android:layout_width="341dp"
+        android:layout_height="36dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/bg_trans_card"
+        app:layout_constraintBottom_toBottomOf="@id/img_card"
+        app:layout_constraintEnd_toEndOf="@id/img_card"
+        app:layout_constraintStart_toStartOf="@id/img_card" />
+
+    <TextView
+        android:id="@+id/tv_change"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ubah Alamat"
+        android:layout_marginTop="7dp"
+        android:fontFamily="@font/robotobold"
+        android:textSize="16dp"
+        android:textColor="#121010"
+        app:layout_constraintTop_toTopOf="@id/v_bg_trans"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+
+
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>
